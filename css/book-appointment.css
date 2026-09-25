@@ -1,0 +1,286 @@
+/* ================= GENERAL ================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #212529;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0.2);
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.nav-btn {
+    margin: 0 2px;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important;
+}
+
+
+/* ================= HEADER ================= */
+
+.booking-header {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    color: white;
+    padding: 60px 20px;
+}
+
+.booking-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.booking-header p {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+
+/* ================= DOCTOR SUMMARY ================= */
+
+.doctor-summary {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.doctor-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.doctor-info {
+    padding: 25px;
+}
+
+.verified {
+    display: inline-block;
+    color: #198754;
+    background-color: #e8f7ee;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.doctor-info h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.specialization {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.doctor-details p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.doctor-details i {
+    color: #0d6efd;
+    width: 25px;
+}
+
+
+/* ================= INFO BOX ================= */
+
+.info-box {
+    background: #eaf3ff;
+    border-radius: 15px;
+    padding: 25px;
+    border-left: 5px solid #0d6efd;
+}
+
+.info-box h5 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.info-box li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+/* ================= BOOKING CARD ================= */
+
+.booking-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.booking-title {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.booking-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.booking-title p {
+    color: #777;
+    margin-bottom: 0;
+}
+
+
+/* ================= FORM ================= */
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+    border: 1px solid #dce1e7;
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+
+/* ================= CONSULTATION ================= */
+
+.consultation-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.consultation-option {
+    cursor: pointer;
+}
+
+.consultation-option input {
+    display: none;
+}
+
+.consultation-option span {
+    display: block;
+    padding: 13px 18px;
+    border: 1px solid #dce1e7;
+    border-radius: 8px;
+    color: #555;
+    transition: 0.3s;
+}
+
+.consultation-option span i {
+    margin-right: 7px;
+    color: #0d6efd;
+}
+
+.consultation-option:hover span {
+    border-color: #0d6efd;
+    background-color: #f0f6ff;
+}
+
+.consultation-option input:checked+span {
+    border-color: #0d6efd;
+    background-color: #eaf3ff;
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.booking-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.booking-buttons .btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.booking-buttons .btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background-color: #101828;
+    color: white;
+    padding: 35px 0;
+    margin-top: 30px;
+}
+
+.footer h4 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer h4 i {
+    color: #0d6efd;
+}
+
+.footer p {
+    color: #adb5bd;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .booking-header {
+        padding: 45px 15px;
+    }
+
+    .booking-header h1 {
+        font-size: 30px;
+    }
+
+    .booking-card {
+        padding: 25px 20px;
+    }
+
+    .doctor-image {
+        height: 250px;
+    }
+
+    .booking-buttons {
+        flex-direction: column;
+    }
+
+    .booking-buttons .btn {
+        width: 100%;
+    }
+}

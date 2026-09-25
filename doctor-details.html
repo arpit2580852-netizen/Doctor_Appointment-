@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Details | MediCare</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/doctor-details.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-lg-1 my-lg-0 mx-lg-5 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../COLLEGE PROJECT/Doctor.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Doctor.html">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <a href="../LoginPage.html"><button type="button"
+                                class="btn btn-outline-secondary mx-2">Login</button></a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <button type="button" class="btn btn-primary">Register</button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-primary" submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="container py-5">
+
+        <!-- Back Button -->
+
+        <a href="../COLLEGE PROJECT/Doctor.html" class="back-link">
+
+            <i class="bi bi-arrow-left"></i>
+            Back to Doctors 
+
+        </a>
+
+
+        <!-- ================= DOCTOR PROFILE ================= -->
+
+        <section class="doctor-profile mt-4">
+
+            <div class="row g-4 align-items-center">
+
+                <!-- Doctor Image -->
+
+                <div class="col-md-4 col-lg-3">
+
+                    <div class="profile-image-box">
+
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+                            alt="Dr Rahul Sharma" class="profile-image">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Basic Information -->
+
+                <div class="col-md-8 col-lg-5">
+
+                    <span class="verified-badge">
+                        <i class="bi bi-patch-check-fill"></i>
+                        Verified Doctor
+                    </span>
+
+                    <h1 class="doctor-title">
+                        Dr. Rahul Sharma
+                    </h1>
+
+                    <h5 class="doctor-specialization">
+                        Cardiologist
+                    </h5>
+
+                    <p class="doctor-qualification">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        MBBS, MD (Cardiology)
+                    </p>
+
+                    <p class="doctor-experience">
+                        <i class="bi bi-briefcase-fill"></i>
+                        8 Years of Experience
+                    </p>
+
+
+                    <!-- Rating -->
+
+                    <div class="rating">
+
+                        <span class="stars">
+                            ★★★★★
+                        </span>
+
+                        <strong>
+                            4.8
+                        </strong>
+
+                        <span class="text-muted">
+                            (120 Reviews)
+                        </span>
+
+                    </div>
+
+
+                    <!-- Fee -->
+
+                    <div class="fee-box mt-3">
+
+                        <small>
+                            Consultation Fee
+                        </small>
+
+                        <h3>
+                            ₹800
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- About Doctor -->
+
+                <div class="col-lg-4">
+
+                    <div class="about-card">
+
+                        <h5 class="fw-bold mb-3">
+                            About Doctor
+                        </h5>
+
+                        <p>
+                            Dr. Rahul Sharma is an experienced
+                            Cardiologist specializing in
+                            cardiovascular health and heart-related
+                            conditions.
+                        </p>
+
+                        <h6 class="fw-bold mt-4">
+                            Areas of Expertise
+                        </h6>
+
+                        <ul class="expertise-list">
+
+                            <li>
+                                Heart Disease
+                            </li>
+
+                            <li>
+                                Interventional Cardiology
+                            </li>
+
+                            <li>
+                                ECG & Echo
+                            </li>
+
+                            <li>
+                                Preventive Cardiology
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APPOINTMENT SECTION ================= -->
+
+        <section class="appointment-section mt-5">
+
+            <div class="row g-4">
+
+
+                <!-- Available Days -->
+
+                <div class="col-lg-8">
+
+                    <div class="appointment-card">
+
+                        <h4 class="section-title">
+                            Available Days
+                        </h4>
+
+                        <p class="text-muted">
+                            Select a day for your appointment
+                        </p>
+
+
+                        <!-- Days -->
+
+                        <div class="days-container">
+
+                            <button class="day-btn active">
+
+                                <span>
+                                    Mon
+                                </span>
+
+                                <strong>
+                                    18
+                                </strong>
+
+                            </button>
+
+
+                            <button class="day-btn">
+
+                                <span>
+                                    Tue
+                                </span>
+
+                                <strong>
+                                    19
+                                </strong>
+
+                            </button>
+
+
+                            <button class="day-btn">
+
+                                <span>
+                                    Wed
+                                </span>
+
+                                <strong>
+                                    20
+                                </strong>
+
+                            </button>
+
+
+                            <button class="day-btn">
+
+                                <span>
+                                    Thu
+                                </span>
+
+                                <strong>
+                                    21
+                                </strong>
+
+                            </button>
+
+
+                            <button class="day-btn">
+
+                                <span>
+                                    Fri
+                                </span>
+
+                                <strong>
+                                    22
+                                </strong>
+
+                            </button>
+
+
+                            <button class="day-btn">
+
+                                <span>
+                                    Sat
+                                </span>
+
+                                <strong>
+                                    23
+                                </strong>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Time Slots -->
+
+                        <h4 class="section-title mt-5">
+                            Available Time Slots
+                        </h4>
+
+                        <p class="text-muted">
+                            Choose your preferred appointment time
+                        </p>
+
+
+                        <div class="time-slots">
+
+                            <button class="time-btn">
+                                09:00 AM
+                            </button>
+
+                            <button class="time-btn">
+                                10:00 AM
+                            </button>
+
+                            <button class="time-btn">
+                                11:00 AM
+                            </button>
+
+                            <button class="time-btn disabled">
+                                12:00 PM
+                            </button>
+
+                            <button class="time-btn">
+                                04:00 PM
+                            </button>
+
+                            <button class="time-btn">
+                                05:00 PM
+                            </button>
+
+                            <button class="time-btn">
+                                06:00 PM
+                            </button>
+
+                            <button class="time-btn">
+                                07:00 PM
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Booking Summary -->
+
+                <div class="col-lg-4">
+
+                    <div class="booking-card">
+
+                        <div class="booking-icon">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+                            Book Appointment
+                        </h4>
+
+                        <p class="text-muted">
+                            Schedule your consultation with
+                            Dr. Rahul Sharma.
+                        </p>
+
+
+                        <div class="summary-box">
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Doctor
+                                </span>
+
+                                <strong>
+                                    Dr. Rahul Sharma
+                                </strong>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Specialization
+                                </span>
+
+                                <strong>
+                                    Cardiologist
+                                </strong>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Date
+                                </span>
+
+                                <strong>
+                                    Monday, 18
+                                </strong>
+
+                            </div>
+
+                            <div class="summary-row">
+
+                                <span>
+                                    Time
+                                </span>
+
+                                <strong>
+                                    09:00 AM
+                                </strong>
+
+                            </div>
+
+                            <hr>
+
+                            <div class="summary-row total">
+
+                                <span>
+                                    Consultation Fee
+                                </span>
+
+                                <strong>
+                                    ₹800
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="../COLLEGE PROJECT/book-appointment.html" class="btn btn-primary btn-lg w-100 mt-3">
+
+                            <i class="bi bi-calendar-plus"></i>
+                            Book Appointment
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INFORMATION ================= -->
+
+        <section class="information-section mt-5">
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            <i class="bi bi-hospital"></i>
+                        </div>
+
+                        <h5>
+                            Hospital
+                        </h5>
+
+                        <p>
+                            MediCare Multi-Speciality Hospital
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+
+                        <h5>
+                            Location
+                        </h5>
+
+                        <p>
+                            New Delhi, India
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            <i class="bi bi-clock"></i>
+                        </div>
+
+                        <h5>
+                            Consultation Hours
+                        </h5>
+
+                        <p>
+                            9:00 AM – 1:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container py-5">
+
+            <div class="row g-4">
+
+                <div class="col-md-5">
+
+                    <h5 class="fw-bold">
+                        <i class="bi bi-heart-pulse-fill"></i>
+                        MediCare
+                    </h5>
+
+                    <p class="text-white-50">
+                        Your health is our priority. Find trusted
+                        doctors and book appointments easily.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <h6 class="fw-bold">
+                        Quick Links
+                    </h6>
+
+                    <p>
+                        <a href="index.html">Home</a>
+                    </p>
+
+                    <p>
+                        <a href="doctors.html">Doctors</a>
+                    </p>
+
+                    <p>
+                        <a href="#">About Us</a>
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <h6 class="fw-bold">
+                        Contact Us
+                    </h6>
+
+                    <p>
+                        <i class="bi bi-geo-alt"></i>
+                        New Delhi, India
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone"></i>
+                        +91 9876543210
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope"></i>
+                        info@medicare.com
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center text-white-50">
+                © 2026 MediCare. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

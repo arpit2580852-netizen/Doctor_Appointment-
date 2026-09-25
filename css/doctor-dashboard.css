@@ -1,0 +1,402 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #212529;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.doctor-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.doctor-nav span {
+    color: #555;
+    font-weight: 500;
+}
+
+
+/* DASHBOARD */
+
+.doctor-dashboard {
+    padding: 45px 15px;
+}
+
+
+/* HEADER */
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-header p {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.dashboard-header h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.dashboard-header span {
+    color: #6c757d;
+}
+
+
+/* STATISTICS */
+
+.stat-card {
+    background-color: white;
+
+    padding: 22px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+}
+
+.stat-icon.blue {
+    background-color: #eaf3ff;
+    color: #0d6efd;
+}
+
+.stat-icon.green {
+    background-color: #e5f7ed;
+    color: #198754;
+}
+
+.stat-icon.orange {
+    background-color: #fff3df;
+    color: #f59f00;
+}
+
+.stat-icon.red {
+    background-color: #ffe9e9;
+    color: #dc3545;
+}
+
+.stat-card span {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.stat-card h3 {
+    margin: 2px 0 0;
+    font-size: 26px;
+}
+
+
+/* CURRENT PATIENT */
+
+.current-patient {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.current-patient h2 {
+    margin: 8px 0 5px;
+}
+
+.current-patient p {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+.patient-status {
+    background-color: rgba(255,255,255,0.15);
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.patient-status i {
+    color: #5cff9d;
+    font-size: 8px;
+}
+
+.current-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* DASHBOARD CARD */
+
+.dashboard-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card-header-custom {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.card-header-custom h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.card-header-custom p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 14px;
+}
+
+.card-header-custom a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* QUEUE */
+
+.queue-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px 5px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.time-box {
+    width: 60px;
+    text-align: center;
+}
+
+.time-box strong {
+    display: block;
+    font-size: 16px;
+}
+
+.time-box span {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.patient-info {
+    flex: 1;
+}
+
+.patient-info h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.patient-info p {
+    color: #6c757d;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* STATUS */
+
+.queue-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.queue-status.checked {
+    background-color: #e5f7ed;
+    color: #198754;
+}
+
+.queue-status.waiting {
+    background-color: #fff3df;
+    color: #f59f00;
+}
+
+.queue-status.no-show {
+    background-color: #ffe9e9;
+    color: #dc3545;
+}
+
+.queue-status.upcoming {
+    background-color: #edf1f5;
+    color: #6c757d;
+}
+
+
+/* QUICK ACTION */
+
+.quick-action {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px 5px;
+
+    border-bottom: 1px solid #eee;
+
+    text-decoration: none;
+    color: #333;
+}
+
+.quick-action:hover {
+    color: #0d6efd;
+}
+
+.quick-action i:first-child {
+    color: #0d6efd;
+}
+
+.quick-action i:last-child {
+    margin-left: auto;
+    color: #999;
+}
+
+
+/* GRACE PERIOD */
+
+.grace-card {
+    margin-top: 25px;
+
+    background-color: #fff8e6;
+
+    border: 1px solid #ffe69c;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.grace-icon {
+    color: #f59f00;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.grace-card h4 {
+    font-size: 18px;
+}
+
+.grace-card p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.grace-card span {
+    font-size: 13px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #101828;
+    color: white;
+
+    padding: 30px 0;
+}
+
+.footer h5 i {
+    color: #0d6efd;
+}
+
+.footer p {
+    color: #adb5bd;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .doctor-nav span {
+        display: none;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .current-patient {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .current-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .current-actions .btn {
+        width: 100%;
+    }
+
+    .queue-row {
+        flex-wrap: wrap;
+    }
+
+}

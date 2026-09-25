@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0.2);
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.nav-btn {
+    margin: 0 2px;
+}
+
+.doctor-heading {
+    text-align: center;
+    margin: 1%;
+}
+
+.search-doctor {
+    width: 65%;
+    margin: 2% auto;
+}
+
+.doctor-images .card {
+    margin: auto;
+}
+
+.view-profile {
+    width: 70%;
+    margin: 1% 15%;
+    background-color: rgb(32, 32, 203);
+}
+

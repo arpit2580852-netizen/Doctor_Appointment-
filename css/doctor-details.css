@@ -1,0 +1,478 @@
+/* ================= GENERAL ================= */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #172033;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0.2);
+}
+
+.nav-item {
+    font-weight: bold;
+}
+
+.nav-btn {
+    margin: 0 2px;
+}
+
+
+/* ================= BACK LINK ================= */
+
+.back-link {
+    text-decoration: none;
+    color: #0d6efd;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= DOCTOR PROFILE ================= */
+
+.doctor-profile {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+}
+
+
+/* ================= IMAGE ================= */
+
+.profile-image-box {
+    height: 300px;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: #eef5ff;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+/* ================= DOCTOR INFO ================= */
+
+.verified-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    background-color: #e8f5e9;
+
+    color: #198754;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.doctor-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.doctor-specialization {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.doctor-qualification,
+.doctor-experience {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.doctor-qualification i,
+.doctor-experience i {
+    color: #0d6efd;
+    margin-right: 8px;
+}
+
+
+/* ================= RATING ================= */
+
+.rating {
+    margin-top: 15px;
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+
+/* ================= FEE ================= */
+
+.fee-box {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #f0fff5;
+
+    border-radius: 10px;
+}
+
+.fee-box small {
+    color: #666;
+}
+
+.fee-box h3 {
+    color: #198754;
+    margin: 3px 0 0;
+    font-weight: 700;
+}
+
+
+/* ================= ABOUT CARD ================= */
+
+.about-card {
+    background-color: #f8fafc;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.about-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.expertise-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.expertise-list li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
+/* ================= APPOINTMENT CARD ================= */
+
+.appointment-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+
+/* ================= DAYS ================= */
+
+.days-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.day-btn {
+    width: 70px;
+    height: 70px;
+
+    background-color: white;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s;
+}
+
+.day-btn span {
+    font-size: 13px;
+    color: #666;
+}
+
+.day-btn strong {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.day-btn:hover,
+.day-btn.active {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+.day-btn:hover span,
+.day-btn.active span {
+    color: white;
+}
+
+
+/* ================= TIME SLOTS ================= */
+
+.time-slots {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.time-btn {
+    padding: 10px 18px;
+
+    background-color: white;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 8px;
+
+    color: #333;
+
+    transition: 0.3s;
+}
+
+.time-btn:hover {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.time-btn.disabled {
+    background-color: #e9ecef;
+    color: #999;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+
+/* ================= BOOKING CARD ================= */
+
+.booking-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 90px;
+}
+
+.booking-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eaf3ff;
+
+    color: #0d6efd;
+
+    border-radius: 12px;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.summary-box {
+    background-color: #f8fafc;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+.summary-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+}
+
+.summary-row span {
+    color: #666;
+}
+
+.summary-row strong {
+    text-align: right;
+}
+
+.summary-row.total {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.summary-row.total strong {
+    color: #198754;
+}
+
+
+/* ================= INFORMATION ================= */
+
+.info-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    text-align: center;
+
+    height: 100%;
+}
+
+.info-icon {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eaf3ff;
+
+    color: #0d6efd;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.info-card h5 {
+    font-weight: 700;
+}
+
+.info-card p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    margin-top: 50px;
+
+    background-color: #10243e;
+
+    color: white;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .booking-card {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .doctor-profile {
+        padding: 20px;
+    }
+
+    .doctor-title {
+        font-size: 27px;
+        margin-top: 20px;
+    }
+
+    .profile-image-box {
+        height: 350px;
+    }
+
+    .appointment-card {
+        padding: 20px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .profile-image-box {
+        height: 300px;
+    }
+
+    .day-btn {
+        width: 60px;
+        height: 65px;
+    }
+
+    .time-btn {
+        width: 100%;
+    }
+
+}

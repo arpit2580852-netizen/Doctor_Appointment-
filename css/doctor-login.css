@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+
+/* LOGIN SECTION */
+
+.login-section {
+    min-height: 78vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 50px 15px;
+}
+
+
+/* LOGIN CARD */
+
+.login-card {
+    width: 100%;
+    max-width: 470px;
+
+    background: white;
+
+    margin: auto;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ICON */
+
+.login-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: #eaf3ff;
+    color: #0d6efd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+
+/* TITLE */
+
+.login-card h1 {
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.login-description {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+
+/* FORM */
+
+.form-label {
+    font-weight: 600;
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    color: #0d6efd;
+}
+
+.form-control {
+    height: 48px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+
+/* FORGOT */
+
+.forgot-link {
+    color: #0d6efd;
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-btn {
+    width: 100%;
+
+    padding: 12px;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+}
+
+
+/* DEMO */
+
+.demo-info {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    background-color: #fff8e6;
+
+    color: #856404;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+
+    font-size: 13px;
+
+    text-align: left;
+}
+
+
+/* BACK */
+
+.back-link {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #6c757d;
+
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #0d6efd;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #101828;
+
+    color: white;
+
+    padding: 25px 0;
+}
+
+.footer h5 {
+    margin-bottom: 8px;
+}
+
+.footer h5 i {
+    color: #0d6efd;
+}
+
+.footer p,
+.footer small {
+    color: #adb5bd;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .login-card {
+        padding: 30px 20px;
+    }
+
+}

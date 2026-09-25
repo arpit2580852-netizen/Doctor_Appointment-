@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Dashboard - MediCare</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold text-primary" href="index.html">
+
+            <i class="bi bi-heart-pulse-fill"></i>
+            MediCare
+
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="doctors.html">
+                        Doctors
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+
+                    <a href="index.html"
+                       class="btn btn-outline-danger">
+
+                        <i class="bi bi-box-arrow-right"></i>
+                        Logout
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ================= DASHBOARD ================= -->
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <div class="welcome-section">
+
+            <div>
+
+                <p class="welcome-small">
+                    Welcome back!
+                </p>
+
+                <h1>
+                    Hello, Arpit Sharma 👋
+                </h1>
+
+                <p>
+                    Manage your appointments and healthcare information
+                    from one place.
+                </p>
+
+            </div>
+
+
+            <a href="doctors.html"
+               class="btn btn-primary">
+
+                <i class="bi bi-plus-lg"></i>
+                Book New Appointment
+
+            </a>
+
+        </div>
+
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <div class="row g-4 mb-4">
+
+
+            <div class="col-md-4">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+
+                        <i class="bi bi-calendar-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Total Appointments</span>
+
+                        <h3>5</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+
+                        <i class="bi bi-check-circle"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Completed</span>
+
+                        <h3>3</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+
+                        <i class="bi bi-clock-history"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Upcoming</span>
+
+                        <h3>2</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <div class="row g-4">
+
+
+            <!-- ================= APPOINTMENTS ================= -->
+
+            <div class="col-lg-8">
+
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h3>Upcoming Appointments</h3>
+
+                            <p>
+                                Your scheduled doctor appointments
+                            </p>
+
+                        </div>
+
+                        <a href="#">
+                            View All
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- APPOINTMENT 1 -->
+
+                    <div class="appointment-card">
+
+                        <div class="appointment-doctor">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=200&q=80"
+                                alt="Dr. Rahul Sharma">
+
+                            <div>
+
+                                <h4>
+                                    Dr. Rahul Sharma
+                                </h4>
+
+                                <p>
+                                    Cardiologist
+                                </p>
+
+                                <span class="status confirmed">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Confirmed
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-date">
+
+                            <div>
+
+                                <i class="bi bi-calendar3"></i>
+
+                                <span>
+                                    15 September 2026
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <i class="bi bi-clock"></i>
+
+                                <span>
+                                    10:00 AM - 10:30 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-actions">
+
+                            <a href="#"
+                               class="btn btn-outline-primary btn-sm">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- APPOINTMENT 2 -->
+
+                    <div class="appointment-card">
+
+                        <div class="appointment-doctor">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80"
+                                alt="Dr. Priya Verma">
+
+                            <div>
+
+                                <h4>
+                                    Dr. Priya Verma
+                                </h4>
+
+                                <p>
+                                    Dermatologist
+                                </p>
+
+                                <span class="status confirmed">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Confirmed
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-date">
+
+                            <div>
+
+                                <i class="bi bi-calendar3"></i>
+
+                                <span>
+                                    20 September 2026
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <i class="bi bi-clock"></i>
+
+                                <span>
+                                    02:00 PM - 02:30 PM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="appointment-actions">
+
+                            <a href="#"
+                               class="btn btn-outline-primary btn-sm">
+
+                                View Details
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PROFILE ================= -->
+
+            <div class="col-lg-4">
+
+                <div class="dashboard-card profile-card">
+
+                    <div class="profile-heading">
+
+                        <h3>My Profile</h3>
+
+                        <a href="#">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div class="profile-image">
+
+                        <div>
+                            AS
+                        </div>
+
+                    </div>
+
+
+                    <h4>
+                        Arpit Sharma
+                    </h4>
+
+                    <p class="profile-role">
+                        Patient
+                    </p>
+
+
+                    <div class="profile-details">
+
+                        <div>
+
+                            <i class="bi bi-envelope"></i>
+
+                            <span>
+                                arpit@example.com
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-telephone"></i>
+
+                            <span>
+                                +91 98765 43210
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-calendar"></i>
+
+                            <span>
+                                22 Years
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            <span>
+                                Ghaziabad, Uttar Pradesh
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#"
+                       class="btn btn-outline-primary w-100 mt-3">
+
+                        Edit Profile
+
+                    </a>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="dashboard-card quick-card">
+
+                    <h3>Quick Actions</h3>
+
+
+                    <a href="Doctor.html">
+
+                        <i class="bi bi-search"></i>
+
+                        Find a Doctor
+
+                        <i class="bi bi-chevron-right"></i>
+
+                    </a>
+
+
+                    <a href="book-appointment.html">
+
+                        <i class="bi bi-calendar-plus"></i>
+
+                        Book Appointment
+
+                        <i class="bi bi-chevron-right"></i>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <i class="bi bi-file-medical"></i>
+
+                        Medical Records
+
+                        <i class="bi bi-chevron-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+
+                <h4>
+
+                    <i class="bi bi-heart-pulse-fill"></i>
+                    MediCare
+
+                </h4>
+
+                <p>
+                    Making healthcare simple, accessible and convenient.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-6 text-md-end">
+
+                <p class="mb-0">
+                    © 2026 MediCare. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

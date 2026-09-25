@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            box-shadow: 0px 0px 5px rgb(0, 0, 0.2);
+        }
+
+        .nav-item {
+            font-weight: bold;
+        }
+
+        .nav-btn {
+            margin: 0 2px;
+        }
+
+        .doctor-heading {
+            text-align: center;
+            margin: 1%;
+        }
+
+        .search-doctor {
+            width: 65%;
+            margin: 2% auto;
+        }
+
+        .doctor-images .card {
+            margin: auto;
+        }
+
+        .view-profile {
+            width: 70%;
+            margin: 1% 15%;
+            background-color: rgb(32, 32, 203);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-lg-1 my-lg-0 mx-lg-5 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Doctor.html">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <a href="../LoginPage.html"><button type="button"
+                                class="btn btn-outline-secondary">Login</button></a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <button type="button" class="btn btn-primary">Register</button>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-primary" submit>Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid doctor-heading">
+        <h1>Our Doctors</h1>
+        <p>Find the right doctor for your treatment</p>
+    </div>
+
+    <div class="container search-doctor">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 mx-2" style="width: 50%;margin: auto;" type="search"
+                placeholder="&#xF52A; Search Doctors..." aria-label="Search" />
+
+            <div class="dropdown mx-2">
+                <button class="btn btn-outline-dark dropdown-toggle" style="width: 200px;" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All Specialization
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-primary submit" style="width: 120px;">Search</button>
+        </form>
+    </div>
+
+    <div class="container-fluid d-flex doctor-images">
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/Doctor1.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Rahul Sharma</h4>
+                <p class="card-text m-0">Cardologist</p>
+                <p class="my-2">8 Years Exp. -MBBS,MD</p>
+                <a href="./doctor-details.html"><button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button></a>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/doctor2.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Priya Verma</h4>
+                <p class="card-text m-0">Dermatologist</p>
+                <p class="my-2">6 Years Exp. -MBBS,MD</p>
+                <button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/doctor3.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Amit Patel</h4>
+                <p class="card-text m-0">Neurologist</p>
+                <p class="my-2">10 Years Exp. -MBBS,MD</p>
+                <button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/doctor4.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Neha Singh</h4>
+                <p class="card-text m-0">Pedtarician</p>
+                <p class="my-2">7 Years Exp. -MBBS,MD</p>
+                <button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

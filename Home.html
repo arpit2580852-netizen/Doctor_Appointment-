@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Home.css">
+    <link rel="stylesheet" href="./css/Doctor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-primary" href="Home.html">
+                <i class="bi bi-heart-pulse-fill"></i>
+                MediCare
+
+            </a>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-lg-1 my-lg-0 mx-lg-5 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Doctor.html">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <a href="../LoginPage.html"><button type="button" class="btn btn-outline-secondary">Patient
+                                Login</button></a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <button type="button" class="btn btn-primary">Register</button>
+                    </li>
+                    <a href="doctor-login.html" class="btn btn-outline-primary">
+                        <i class="bi bi-person-badge"></i>
+                        Doctor Login
+                    </a>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-primary" submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid book-appointment p-5">
+        <h1>Your Health,</h1>
+        <h1>Our Priority</h1>
+        <p>Book an appointment with experienced</p>
+        <p>doctors and get the best medical care.</p>
+        <a href="./Doctor.html"><button type="button" class="btn btn-primary p-2 m-4 book-btn">Book
+                Appointment</button></a>
+
+        <div class="container-fluid d-flex card-options">
+            <div class="card mx-1" style="width: 24rem;height: 10rem;border: 1px solid rgb(0, 0, 0, 0.5);">
+                <div class="card-body card-box">
+                    <div class="svg-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 640 640">
+                            <path fill="rgb(0, 78, 218)"
+                                d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+                        </svg>
+                    </div>
+
+                    <div class="cardbox-info">
+                        <h4 class="card-title">Find Doctor</h4>
+                        <p class="card-text">Search doctors by specialization</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="card mx-1" style="width: 24rem;height: 10rem;border: 1px solid rgb(0, 0, 0, 0.5);">
+                <div class="card-body card-box">
+                    <div class="svg-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path fill="rgb(0, 78, 218)"
+                                d="M224 64C241.7 64 256 78.3 256 96L256 128L384 128L384 96C384 78.3 398.3 64 416 64C433.7 64 448 78.3 448 96L448 128L480 128C515.3 128 544 156.7 544 192L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 192C96 156.7 124.7 128 160 128L192 128L192 96C192 78.3 206.3 64 224 64zM160 304L160 336C160 344.8 167.2 352 176 352L208 352C216.8 352 224 344.8 224 336L224 304C224 295.2 216.8 288 208 288L176 288C167.2 288 160 295.2 160 304zM288 304L288 336C288 344.8 295.2 352 304 352L336 352C344.8 352 352 344.8 352 336L352 304C352 295.2 344.8 288 336 288L304 288C295.2 288 288 295.2 288 304zM432 288C423.2 288 416 295.2 416 304L416 336C416 344.8 423.2 352 432 352L464 352C472.8 352 480 344.8 480 336L480 304C480 295.2 472.8 288 464 288L432 288zM160 432L160 464C160 472.8 167.2 480 176 480L208 480C216.8 480 224 472.8 224 464L224 432C224 423.2 216.8 416 208 416L176 416C167.2 416 160 423.2 160 432zM304 416C295.2 416 288 423.2 288 432L288 464C288 472.8 295.2 480 304 480L336 480C344.8 480 352 472.8 352 464L352 432C352 423.2 344.8 416 336 416L304 416zM416 432L416 464C416 472.8 423.2 480 432 480L464 480C472.8 480 480 472.8 480 464L480 432C480 423.2 472.8 416 464 416L432 416C423.2 416 416 423.2 416 432z" />
+                        </svg>
+                    </div>
+
+                    <div class="cardbox-info">
+                        <h4 class="card-title">Book Appointment</h4>
+                        <p class="card-text">Choose data & time and book</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="card mx-1" style="width: 24rem;height: 10rem;border: 1px solid rgb(0, 0, 0, 0.5);">
+                <div class="card-body card-box">
+                    <div class="svg-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path fill="rgb(0, 78, 218)"
+                                d="M320 64C324.6 64 329.2 65 333.4 66.9L521.8 146.8C543.8 156.1 560.2 177.8 560.1 204C559.6 303.2 518.8 484.7 346.5 567.2C329.8 575.2 310.4 575.2 293.7 567.2C121.3 484.7 80.6 303.2 80.1 204C80 177.8 96.4 156.1 118.4 146.8L306.7 66.9C310.9 65 315.4 64 320 64zM320 130.8L320 508.9C458 442.1 495.1 294.1 496 205.5L320 130.9L320 130.9z" />
+                        </svg>
+                    </div>
+
+                    <div class="cardbox-info">
+                        <h4 class="card-title">Secure and Easy</h4>
+                        <p class="card-text">Your data is safe with us</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="card mx-1" style="width: 24rem;height: 10rem;border: 1px solid rgb(0, 0, 0, 0.5);">
+                <div class="card-body card-box">
+                    <div class="svg-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50"
+                            viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                            <path fill="rgb(0, 78, 218)"
+                                d="M528 320C528 434.9 434.9 528 320 528C205.1 528 112 434.9 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320zM64 320C64 461.4 178.6 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z" />
+                        </svg>
+                    </div>
+
+                    <div class="cardbox-info">
+                        <h4 class="card-title">24/7 Support</h4>
+                        <p class="card-text">We are always here to help</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid doctor-heading">
+        <h1>Our Doctors</h1>
+        <p>Find the right doctor for your treatment</p>
+    </div>
+
+    <div class="container search-doctor">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 mx-2" style="width: 50%;margin: auto;" type="search"
+                placeholder="&#xF52A; Search Doctors..." aria-label="Search" />
+
+            <div class="dropdown mx-2">
+                <button class="btn btn-outline-dark dropdown-toggle" style="width: 200px;" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    All Specialization
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    <li><a class="dropdown-item" href="#">etc</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-outline-primary submit" style="width: 120px;">Search</button>
+        </form>
+    </div>
+
+    <div class="container-fluid d-flex doctor-images">
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/Doctor1.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Rahul Sharma</h4>
+                <p class="card-text m-0">Cardologist</p>
+                <p class="my-2">8 Years Exp. -MBBS,MD</p>
+                <a href="./Doctor.html"><button type="button" style="background-color: rgb(32, 32, 203);"
+                        class="btn btn-primary p-2 m-4 view-profile">View Profile</button></a>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/doctor2.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Priya Verma</h4>
+                <p class="card-text m-0">Dermatologist</p>
+                <p class="my-2">6 Years Exp. -MBBS,MD</p>
+                <button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/doctor3.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Amit Patel</h4>
+                <p class="card-text m-0">Neurologist</p>
+                <p class="my-2">10 Years Exp. -MBBS,MD</p>
+                <button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button>
+
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; text-align: center;">
+            <img src="./images/doctor4.png" class="card-img-top" alt="image not found">
+            <div class="card-body">
+                <h4 class="card-title text-center">Dr. Neha Singh</h4>
+                <p class="card-text m-0">Pedtarician</p>
+                <p class="my-2">7 Years Exp. -MBBS,MD</p>
+                <button type="button" style="background-color: rgb(32, 32, 203);"
+                    class="btn btn-primary p-2 m-4 view-profile">View Profile</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
